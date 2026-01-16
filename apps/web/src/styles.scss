@@ -1,6 +1,7 @@
 // Global theme variables and base styles (dark theme)
 $font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-$bg: #071026;
+// $bg: #071026;
+$bg: #ccc;
 $surface: #0b1220;
 $muted: #0f1724;
 $accent: #0b69ff;
@@ -32,3 +33,7 @@ a{color: $accent}
 /* Utilities */
 .container{max-width:980px;margin:0 auto;padding:0 1rem}
 /* You can add global styles to this file, and also import other style files */
+
+.spacer {
+  flex: 1 1 auto;
+}

@@ -1,8 +1,49 @@
-<!-- <app-header></app-header> -->
-<app-navigation></app-navigation>
+<mat-sidenav-container>
+  <mat-sidenav #drawer class="sidenav" mode="over" position="end">
+    <mat-toolbar color="primary" class="nav-header">
+      <button type="button" aria-label="Toggle sidenav" matButton (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav close icon">menu</mat-icon>
+      </button>
+    </mat-toolbar>
 
-<main class="site-main">
-  <router-outlet></router-outlet>
-</main>
+    <div class="nav-links">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </mat-sidenav>
 
-<app-footer></app-footer>
+  <mat-sidenav-content>
+    <mat-toolbar color="primary" class="nav">
+      <div class="brand">
+        <img src="assets/logo.png" alt="Rawr" />
+
+        <span>{{ company.shortName }}</span>
+      </div>
+
+      <span class="spacer"></span>
+
+      <button type="button" aria-label="Toggle sidenav" matButton (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+      </button>
+    </mat-toolbar>
+
+    <div class="route-wrapper">
+      <router-outlet></router-outlet>
+    </div>
+
+    <mat-toolbar color="primary" class="footer">
+      <footer class="site-footer">
+        <div class="inner">
+          <div class="links">
+            <a [href]="company.socials['facebook']" target="_blank" rel="noopener">Facebook</a>
+            <a [href]="company.socials['google']" target="_blank" rel="noopener">Google</a>
+            <a [href]="'mailto:' + company.email">Email</a>
+            <a [href]="'tel:+1' + company.phone">Phone</a>
+          </div>
+          <div class="copyright">© {{ currentYear }} {{ company.fullName }}</div>
+        </div>
+      </footer>
+    </mat-toolbar>
+  </mat-sidenav-content>
+</mat-sidenav-container>

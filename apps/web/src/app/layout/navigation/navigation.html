@@ -1,17 +1,45 @@
-<nav class="nav">
-  <div class="nav-inner">
-    <a class="brand" routerLink="/">Florzy Tech</a>
-    <button class="hamburger" aria-label="Menu" (click)="toggle()" [attr.aria-expanded]="open">
-      <span class="bar"></span>
-      <span class="bar"></span>
-      <span class="bar"></span>
-    </button>
+<!-- <mat-sidenav-container class="nav-container"> -->
+<!--   <mat-sidenav #sidenav class="mobile-drawer" mode="over" [opened]="open" (closedStart)="close()"> -->
+<!--     <mat-nav-list> -->
+<!--       <a mat-list-item routerLink="/" (click)="close()">Home</a> -->
+<!--       <a mat-list-item routerLink="/about" (click)="close()">About</a> -->
+<!--       <a mat-list-item routerLink="/contact" (click)="close()">Contact</a> -->
+<!--       <a mat-list-item routerLink="/faq" (click)="close()">FAQ</a> -->
+<!--     </mat-nav-list> -->
+<!--   </mat-sidenav> -->
+<!---->
+<!--   <mat-sidenav-content> -->
+<!--     <nav class="nav"> -->
+<!--       <div class="nav-inner container"> -->
+<!--         <button mat-icon-button class="hamburger" aria-label="Menu" (click)="toggle()" [attr.aria-expanded]="open"> -->
+<!--           <mat-icon>menu</mat-icon> -->
+<!--         </button> -->
+<!---->
+<!--         <ul class="menu desktop-menu"> -->
+<!--           <li><a mat-button routerLink="/">Home</a></li> -->
+<!--           <li><a mat-button routerLink="/about">About</a></li> -->
+<!--           <li><a mat-button routerLink="/contact">Contact</a></li> -->
+<!--           <li><a mat-button routerLink="/faq">FAQ</a></li> -->
+<!--         </ul> -->
+<!--       </div> -->
+<!--     </nav> -->
+<!--   </mat-sidenav-content> -->
+<!-- </mat-sidenav-container> -->
 
-    <ul class="menu" [class.open]="open">
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-      <li><a routerLink="/faq">FAQ</a></li>
-    </ul>
-  </div>
-</nav>
+<!-- <mat-toolbar> -->
+<!--   <button matIconButton class="example-icon" aria-label="Example icon-button with menu icon"> -->
+<!--     <mat-icon>menu</mat-icon> -->
+<!--   </button> -->
+<!--   <span>My App</span> -->
+<!--   <span class="example-spacer"></span> -->
+<!--   <button -->
+<!--     matIconButton -->
+<!--     class="example-icon favorite-icon" -->
+<!--     aria-label="Example icon-button with heart icon" -->
+<!--   > -->
+<!--     <mat-icon>favorite</mat-icon> -->
+<!--   </button> -->
+<!--   <button matIconButton class="example-icon" aria-label="Example icon-button with share icon"> -->
+<!--     <mat-icon>share</mat-icon> -->
+<!--   </button> -->
+<!-- </mat-toolbar> -->

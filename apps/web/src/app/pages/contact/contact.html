@@ -1,7 +1,24 @@
-<section class="page contact">
-  <h1>Contact</h1>
-  <p><strong>Phone:</strong> <a href="tel:+1-555-555-5555">(555) 555-5555</a></p>
-  <p><strong>Email:</strong> <a href="mailto:info@florzytech.com">info@florzytech.com</a></p>
-  <p><strong>Service Area:</strong> Duluth & Superior (Twin Ports)</p>
-  <p>Prefer social? Find us on <a href="#" target="_blank" rel="noopener">Facebook</a> and <a href="#" target="_blank" rel="noopener">Google</a>.</p>
-</section>
+<mat-card class="page contact">
+  <mat-card-title>Contact</mat-card-title>
+  <mat-card-content>
+    <mat-list>
+      <mat-list-item>
+        <mat-icon matListIcon>phone</mat-icon>
+        <h4 matLine>Phone</h4>
+        <p matLine><a mat-button href="tel:+1-555-555-5555">(555) 555-5555</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>email</mat-icon>
+        <h4 matLine>Email</h4>
+        <p matLine><a mat-button href="mailto:info@florzytech.com">info@florzytech.com</a></p>
+      </mat-list-item>
+      <mat-list-item>
+        <mat-icon matListIcon>place</mat-icon>
+        <h4 matLine>Service Area</h4>
+        <p matLine>Duluth & Superior (Twin Ports)</p>
+      </mat-list-item>
+    </mat-list>
+
+    <p>Prefer social? Find us on <a mat-button href="#" target="_blank" rel="noopener">Facebook</a> and <a mat-button href="#" target="_blank" rel="noopener">Google</a>.</p>
+  </mat-card-content>
+</mat-card>
