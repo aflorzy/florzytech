@@ -1,0 +1,22 @@
+.hero{
+  padding: 2rem 1rem;
+  background: linear-gradient(180deg,#0f172a,#0b1220);
+  color: #fff;
+  text-align: center;
+}
+.hero-inner{max-width:980px;margin:0 auto}
+.hero h1{font-size:1.6rem;margin:0 0 .25rem}
+.hero .sub{opacity:.9;margin:0}
+
+.services{padding:1.25rem}
+.services h2{margin:0 0 .75rem;font-size:1.1rem}
+.grid{display:grid;grid-template-columns:1fr;gap:1rem}
+.card{background:#fff;border-radius:10px;padding:1rem;color:#111;box-shadow:0 6px 18px rgba(2,6,23,.08)}
+.card h3{margin:.25rem 0}
+.price{font-weight:700;margin-top:.5rem}
+.cta{margin-top:1rem}
+
+@media(min-width:720px){
+  .hero h1{font-size:2rem}
+  .grid{grid-template-columns:repeat(2,1fr)}
+}

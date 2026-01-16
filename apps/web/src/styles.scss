@@ -1,1 +1,34 @@
+// Global theme variables and base styles (dark theme)
+$font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+$bg: #071026;
+$surface: #0b1220;
+$muted: #0f1724;
+$accent: #0b69ff;
+$accent-2: #7dd3fc;
+$text: #e6eef8;
+$muted-text: #9fb0c8;
+$border: rgba(255,255,255,0.06);
+
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  font-family: $font-sans;
+  background: linear-gradient(180deg,$bg 0%, darken($bg,4%) 100%);
+  color: $text;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+}
+
+/* Generic surface */
+.surface{
+  background: $surface;
+  border: 1px solid $border;
+  color: $text;
+}
+
+a{color: $accent}
+
+/* Utilities */
+.container{max-width:980px;margin:0 auto;padding:0 1rem}
 /* You can add global styles to this file, and also import other style files */

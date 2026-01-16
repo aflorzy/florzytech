@@ -1,11 +1,14 @@
 import { Component } from '@angular/core';
+import { RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-navigation',
-  imports: [],
+  standalone: true,
+  imports: [RouterModule],
   templateUrl: './navigation.html',
-  styleUrl: './navigation.css',
+  styleUrl: './navigation.scss',
 })
 export class Navigation {
-
+  open = false;
+  toggle(){ this.open = !this.open }
 }

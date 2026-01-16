@@ -1,1 +1,17 @@
-<p>navigation works!</p>
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" routerLink="/">Florzy Tech</a>
+    <button class="hamburger" aria-label="Menu" (click)="toggle()" [attr.aria-expanded]="open">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </button>
+
+    <ul class="menu" [class.open]="open">
+      <li><a routerLink="/">Home</a></li>
+      <li><a routerLink="/about">About</a></li>
+      <li><a routerLink="/contact">Contact</a></li>
+      <li><a routerLink="/faq">FAQ</a></li>
+    </ul>
+  </div>
+</nav>

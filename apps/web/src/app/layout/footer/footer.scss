@@ -1,0 +1,10 @@
+@import '../../../styles.scss';
+
+.site-footer{background:$muted;padding:1rem}
+.site-footer .inner{max-width:980px;margin:0 auto;display:flex;justify-content:space-between;align-items:center}
+.site-footer .links a{color:$accent-2;margin-right:1rem;text-decoration:none}
+.site-footer .copyright{opacity:.8;font-size:.9rem}
+
+@media(max-width:520px){
+  .site-footer .inner{flex-direction:column;gap:.5rem;text-align:center}
+}
