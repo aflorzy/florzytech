@@ -10,8 +10,14 @@ $text: #e6eef8;
 $muted-text: #9fb0c8;
 $border: rgba(255,255,255,0.06);
 
-*{box-sizing:border-box}
-html,body{height:100%}
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
 body{
   margin:0;
   font-family: $font-sans;

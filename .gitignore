@@ -42,9 +42,11 @@ __screenshots__/
 # System files
 .DS_Store
 Thumbs.db
+*.Identifier
 
 
 
 .nx/cache
 .nx/workspace-data
 .angular
+

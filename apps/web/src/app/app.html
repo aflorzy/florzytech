@@ -7,9 +7,12 @@
     </mat-toolbar>
 
     <div class="nav-links">
-      <a href="#">Link 1</a>
-      <a href="#">Link 2</a>
-      <a href="#">Link 3</a>
+      <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{ exact: true }"
+        >Home</a
+      >
+      <a routerLink="about" routerLinkActive="active">About</a>
+      <a routerLink="contact" routerLinkActive="active">Contact</a>
+      <a routerLink="faq" routerLinkActive="active">FAQ</a>
     </div>
   </mat-sidenav>
 
@@ -39,7 +42,7 @@
             <a [href]="company.socials['facebook']" target="_blank" rel="noopener">Facebook</a>
             <a [href]="company.socials['google']" target="_blank" rel="noopener">Google</a>
             <a [href]="'mailto:' + company.email">Email</a>
-            <a [href]="'tel:+1' + company.phone">Phone</a>
+            <a [href]="'tel:+1' + company.phone">Call/Text</a>
           </div>
           <div class="copyright">© {{ currentYear }} {{ company.fullName }}</div>
         </div>
