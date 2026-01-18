@@ -1,3 +1,4 @@
+@use "sass:color";
 @import '../../../styles.scss';
 
 .hero{
@@ -5,7 +6,7 @@
   background-image: url("/assets/controller-back.jpg");
   background-position: center;
   background-size: cover;
-  filter: darken(#000, 50%);
+  filter: color.adjust(#000, $lightness: -50%);
   color: $text;
   text-align: center;
 
@@ -60,5 +61,5 @@
 
 @media(min-width:720px){
   .hero h1{font-size:2rem}
-  .grid{grid-template-columns:repeat(2,1fr)}
+  .grid{grid-template-columns:repeat(4,1fr)}
 }
