@@ -24,6 +24,23 @@ $nav-height: 5rem;
   button {
     padding-right: 0;
   }
+
+  .github-link {
+    display: flex;
+    align-items: center;
+    color: currentColor;
+    opacity: 0.65;
+    transition: opacity 0.2s;
+    padding: 0 0.5rem;
+
+    &:hover {
+      opacity: 1;
+    }
+
+    svg {
+      fill: currentColor;
+    }
+  }
 }
 
 .sidenav {
