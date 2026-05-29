@@ -2,14 +2,13 @@
 
 // Global theme variables and base styles (dark theme)
 $font-sans: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
-// $bg: #071026;
-$bg: #ccc;
+$bg: #071026;
 $surface: #0b1220;
 $muted: #0f1724;
 $accent: #0b69ff;
 $accent-2: #7dd3fc;
 $text: #e6eef8;
-$muted-text: #9fb0c8;
+$muted-text: #b8ccdf;
 $border: rgba(255, 255, 255, 0.06);
 
 * {
@@ -62,4 +61,61 @@ a {
   border-radius: 0.4rem;
   font-weight: 700;
   box-shadow: 0 4px 12px rgba(11, 105, 255, 0.12);
+}
+
+/* Reusable button utilities */
+.btn {
+  display: inline-block;
+  padding: 0.7rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 2px solid transparent;
+  transition: background 0.2s, color 0.2s, border-color 0.2s;
+  line-height: 1;
+}
+
+.btn-primary {
+  background: $accent;
+  color: #fff;
+
+  &:hover,
+  &:focus-visible {
+    background: color.adjust($accent, $lightness: 8%);
+  }
+}
+
+.btn-secondary {
+  background: transparent;
+  color: $accent-2;
+  border-color: $accent-2;
+
+  &:hover,
+  &:focus-visible {
+    background: rgba($accent-2, 0.12);
+  }
+}
+
+/* Global focus indicators for keyboard users */
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+  outline: 2px solid $accent-2;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    transition-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
 }
