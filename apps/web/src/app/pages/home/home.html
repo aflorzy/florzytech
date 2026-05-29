@@ -6,6 +6,14 @@
     </h1>
 
     <p class="sub">Fast, local PS5 controller and console repair in Duluth & Superior.</p>
+
+    <div class="hero-ctas">
+      <a href="tel:+13202678431" class="btn btn-primary">
+        <mat-icon>phone</mat-icon>
+        Call Now
+      </a>
+      <a routerLink="/contact" class="btn btn-secondary">Schedule Repair</a>
+    </div>
   </div>
 </section>
 
@@ -15,7 +23,11 @@
     <mat-card class="card">
       <mat-card-title>Analog Stick Replacement</mat-card-title>
 
-      <img mat-card-image src="assets/analog-stick.jpg" />
+      <img
+        mat-card-image
+        src="assets/analog-stick.jpg"
+        alt="PlayStation 5 DualSense controller analog stick module"
+      />
 
       <mat-card-content>
         <p>
@@ -30,7 +42,11 @@
     <mat-card class="card">
       <mat-card-title>Liquid Metal Replacement</mat-card-title>
 
-      <img mat-card-image src="assets/liquid-metal.jpg" />
+      <img
+        mat-card-image
+        src="assets/liquid-metal.jpg"
+        alt="PS5 console thermal paste liquid metal replacement on CPU"
+      />
 
       <mat-card-content>
         <p>
@@ -45,7 +61,11 @@
     <mat-card class="card">
       <mat-card-title>HDMI Port Replacement</mat-card-title>
 
-      <img mat-card-image src="assets/hdmi-port.jpg" />
+      <img
+        mat-card-image
+        src="assets/hdmi-port.jpg"
+        alt="PlayStation 5 HDMI port repair and replacement"
+      />
 
       <mat-card-content>
         <p>
@@ -58,5 +78,23 @@
     </mat-card>
   </div>
 
+  <p class="guarantee-note">
+    <mat-icon aria-hidden="true">verified</mat-icon>
+    30-day satisfaction guarantee on all repairs
+  </p>
+
   <p class="cta">Need a custom quote? Visit <a routerLink="/contact">Contact</a> or call us.</p>
+</section>
+
+<section class="testimonials">
+  <h2>What Customers Say</h2>
+  <div class="testimonials-grid">
+    @for (t of testimonials; track t.author) {
+      <div class="testimonial-card">
+        <p class="quote">"{{ t.quote }}"</p>
+        <p class="author">— {{ t.author }}</p>
+        <div class="stars" aria-label="5 stars">★★★★★</div>
+      </div>
+    }
+  </div>
 </section>
