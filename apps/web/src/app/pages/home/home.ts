@@ -14,17 +14,13 @@ import { MatIconModule } from '@angular/material/icon';
 export class Home {
   testimonials = [
     {
-      quote: 'Fixed my stick drift in under 2 hours. Super professional and affordable!',
-      author: 'Jake R., Duluth',
+      quote: 'Andrew is skilled and professional. I highly recommend him!',
+      author: 'Stacy',
     },
     {
       quote:
-        'HDMI port was completely broken — thought my PS5 was done for. Andrew had it working same day.',
-      author: 'Megan T., Superior',
-    },
-    {
-      quote: 'Fast, honest, and way cheaper than buying a new controller. 10/10 would recommend.',
-      author: 'Tyler S., Hermantown',
+        'My son broke a joy con, I was able to drop it off and have it fixed in less than 24 hours. I\'d recommend Florzy tech services to everyone.',
+      author: 'John',
     },
   ];
 }
