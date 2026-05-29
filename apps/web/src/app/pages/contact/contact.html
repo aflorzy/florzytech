@@ -2,11 +2,29 @@
   <mat-card-title><h1 class="page-title">Contact Us</h1></mat-card-title>
   <mat-card-content>
     <mat-list>
-      <mat-list-item aria-label="Phone / Text">
-        <mat-icon matListItemIcon>phone</mat-icon>
-        <div matListItemTitle>Phone</div>
+      <mat-list-item aria-label="Message on Facebook (preferred)">
+        <mat-icon matListItemIcon>chat</mat-icon>
+        <div matListItemTitle>Facebook Message <span class="preferred-badge">Preferred</span></div>
         <div matListItemLine>
-          <a mat-button [href]="'tel:+1' + companyDetails.phone" aria-label="Call or text Florzy Tech">(320) 268-8431</a>
+          <a mat-button [href]="companyDetails.socials['facebook']" target="_blank" rel="noopener" aria-label="Message us on Facebook (opens in new window)">
+            Message on Facebook <span aria-hidden="true" class="ext-icon">↗</span>
+          </a>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item aria-label="Text (next preferred)">
+        <mat-icon matListItemIcon>sms</mat-icon>
+        <div matListItemTitle>Text</div>
+        <div matListItemLine>
+          <a mat-button [href]="'sms:+1' + companyDetails.phone" aria-label="Text Florzy Tech">(320) 267-8431</a>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item aria-label="Phone">
+        <mat-icon matListItemIcon>phone</mat-icon>
+        <div matListItemTitle>Call</div>
+        <div matListItemLine>
+          <a mat-button [href]="'tel:+1' + companyDetails.phone" aria-label="Call Florzy Tech">(320) 267-8431</a>
         </div>
       </mat-list-item>
 
@@ -31,14 +49,13 @@
       <mat-icon aria-hidden="true">schedule</mat-icon>
       <div>
         <strong>Availability</strong>
-        <p>Generally available Mon–Sat. Contact us to confirm scheduling before drop-off.</p>
+        <p>Available to be contacted Mon–Sat. All repairs are by appointment — reach out and we'll find a time to meet.</p>
       </div>
     </div>
 
     <p>
-      Prefer social? Find us on
-      <a [href]="companyDetails.socials['facebook']" target="_blank" rel="noopener" aria-label="Facebook page (opens in new window)">Facebook <span aria-hidden="true" class="ext-icon">↗</span></a> and
-      <a [href]="companyDetails.socials['google']" target="_blank" rel="noopener" aria-label="Google profile (opens in new window)">Google <span aria-hidden="true" class="ext-icon">↗</span></a>!
+      Also find us on
+      <a [href]="companyDetails.socials['google']" target="_blank" rel="noopener" aria-label="Google profile (opens in new window)">Google <span aria-hidden="true" class="ext-icon">↗</span></a>.
     </p>
   </mat-card-content>
 </mat-card>
