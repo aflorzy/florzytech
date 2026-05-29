@@ -1,0 +1,8 @@
+# robots.txt for Florzy Tech LLC
+
+# Allow all user agents to access the site
+User-agent: *
+Disallow:
+
+# Sitemap
+Sitemap: https://www.florzytech.com/sitemap.xml
