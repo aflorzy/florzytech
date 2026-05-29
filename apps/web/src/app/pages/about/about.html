@@ -1,23 +1,37 @@
 <mat-card class="page">
   <mat-card-title>About Florzy Tech LLC</mat-card-title>
   <mat-card-content>
-    <p>
-      We are a new electronics repair service and are excited to serve the Duluth & Twin Ports
-      region!
-    </p>
+    <div class="about-inner">
+      <div class="about-text">
+        <p>
+          Hi, my name is Andrew! I'm a Minnesota native and currently live in Duluth. I work
+          full-time as a software engineer and have been repairing computers and electronics on the
+          side for over
+          {{ yearsInService }} years.
+        </p>
 
-    <p>
-      We specialize in PS5 console and controller repair but also repair laptop and desktop
-      computers.
-    </p>
+        <p>
+          Recently I have become passionate about challenging repairs that involve soldering at a
+          microscopic level. I have purchased broken PlayStation 5 consoles and controllers and
+          learned to diagnose and repair them.
+        </p>
 
-    <mat-card>
-      <mat-card-title-group>
-        <img mat-card-md-image src="assets/headshot.jpg" alt="owner headshot" />
+        <p>
+          There are unfortunately several very common faults on PS5 consoles and controllers that
+          most people will experience if they own a console for long enough. I am now offering my
+          experience fixing these issues as a service!
+        </p>
+      </div>
 
-        <mat-card-title>Andrew Flores</mat-card-title>
-        <mat-card-subtitle>Owner</mat-card-subtitle>
-      </mat-card-title-group>
-    </mat-card>
+      <div class="about-headshot">
+        <mat-card>
+          <img src="assets/headshot.jpg" alt="owner headshot" />
+          <mat-card class="owner-meta">
+            <div class="owner-name">Andrew Flores</div>
+            <div class="owner-role">Owner</div>
+          </mat-card>
+        </mat-card>
+      </div>
+    </div>
   </mat-card-content>
 </mat-card>

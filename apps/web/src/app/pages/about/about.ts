@@ -6,6 +6,10 @@ import { MatCardModule } from '@angular/material/card';
   standalone: true,
   imports: [MatCardModule],
   templateUrl: './about.html',
-  styleUrl: './about.scss',
+  styleUrls: ['./about.scss'],
 })
-export class About {}
+export class About {
+  private yearStartedService = 2018;
+
+  protected yearsInService = new Date().getFullYear() - this.yearStartedService;
+}
