@@ -1,24 +1,24 @@
 <mat-card class="page contact">
-  <mat-card-title>Contact</mat-card-title>
+  <mat-card-title><h1 class="page-title">Contact Us</h1></mat-card-title>
   <mat-card-content>
     <mat-list>
-      <mat-list-item>
+      <mat-list-item aria-label="Phone / Text">
         <mat-icon matListItemIcon>phone</mat-icon>
         <div matListItemTitle>Phone</div>
         <div matListItemLine>
-          <a mat-button [href]="'tel:+1' + companyDetails.phone">(320) 268-8431</a>
+          <a mat-button [href]="'tel:+1' + companyDetails.phone" aria-label="Call or text Florzy Tech">(320) 268-8431</a>
         </div>
       </mat-list-item>
 
-      <mat-list-item>
+      <mat-list-item aria-label="Email address">
         <mat-icon matListItemIcon>email</mat-icon>
         <div matListItemTitle>Email</div>
         <div matListItemLine>
-          <a mat-button [href]="'mailto:' + companyDetails.email">{{ companyDetails.email }}</a>
+          <a mat-button [href]="'mailto:' + companyDetails.email" aria-label="Email Florzy Tech">{{ companyDetails.email }}</a>
         </div>
       </mat-list-item>
 
-      <mat-list-item>
+      <mat-list-item aria-label="Service area">
         <mat-icon matListItemIcon>place</mat-icon>
         <div matListItemTitle>Service Area</div>
         <div matListItemLine>
@@ -27,10 +27,18 @@
       </mat-list-item>
     </mat-list>
 
+    <div class="hours-note">
+      <mat-icon aria-hidden="true">schedule</mat-icon>
+      <div>
+        <strong>Availability</strong>
+        <p>Generally available Mon–Sat. Contact us to confirm scheduling before drop-off.</p>
+      </div>
+    </div>
+
     <p>
       Prefer social? Find us on
-      <a [href]="companyDetails.socials['facebook']" target="_blank" rel="noopener">Facebook</a> and
-      <a [href]="companyDetails.socials['google']" target="_blank" rel="noopener">Google</a>!
+      <a [href]="companyDetails.socials['facebook']" target="_blank" rel="noopener" aria-label="Facebook page (opens in new window)">Facebook <span aria-hidden="true" class="ext-icon">↗</span></a> and
+      <a [href]="companyDetails.socials['google']" target="_blank" rel="noopener" aria-label="Google profile (opens in new window)">Google <span aria-hidden="true" class="ext-icon">↗</span></a>!
     </p>
   </mat-card-content>
 </mat-card>

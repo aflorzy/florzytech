@@ -1,5 +1,50 @@
 @import '../../../styles.scss';
 
-.page{padding:1rem}
-.contact a{color:$accent}
+.page {
+  padding: 1rem;
+}
 
+.page-title {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 600;
+  color: $text;
+}
+
+.contact a {
+  color: $accent;
+}
+
+.ext-icon {
+  font-size: 0.75em;
+  vertical-align: super;
+  margin-left: 2px;
+  opacity: 0.7;
+}
+
+.hours-note {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 1.25rem;
+  background: $muted;
+  border-radius: 6px;
+  margin-top: 1rem;
+
+  mat-icon {
+    color: $accent-2;
+    flex-shrink: 0;
+  }
+
+  strong {
+    color: $text;
+    font-size: 0.95rem;
+    display: block;
+  }
+
+  p {
+    color: $muted-text;
+    font-size: 0.85rem;
+    margin: 0.25rem 0 0;
+  }
+}
