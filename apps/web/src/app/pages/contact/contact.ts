@@ -4,7 +4,6 @@ import { MatListModule } from '@angular/material/list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { companyDetails } from '../../constants/metadata.constant';
-import { TitleCasePipe } from '@angular/common';
 
 @Component({
   selector: 'app-contact',

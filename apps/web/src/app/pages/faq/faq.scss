@@ -1,7 +1,21 @@
 @import '../../../styles.scss';
 
-.page{padding:1rem}
-.faq h3{margin-top:1rem;color:$muted-text}
+.page {
+  padding: 1rem;
+}
+
+.page-title {
+  font-size: 1.6rem;
+  margin: 0;
+  font-weight: 600;
+  color: $text;
+}
+
+.faq h3 {
+  margin-top: 1rem;
+  color: $muted-text;
+}
+
 .faq {
   max-width: 500px;
 }
