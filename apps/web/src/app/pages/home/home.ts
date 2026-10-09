@@ -14,6 +14,11 @@ import { MatIconModule } from '@angular/material/icon';
 export class Home {
   testimonials = [
     {
+      quote:
+        'I went to Florzy tech services for Liquid Metal Replacement and a deep clean for my PS5. I was able to drop it off and have it fixed within hours. Andrew not only does phenomenal work but he also is a friendly guy. There is no question where I\'d go for PlayStation repairs in the future. Highly recommend!',
+      author: 'Jared',
+    },
+    {
       quote: 'Andrew is skilled and professional. I highly recommend him!',
       author: 'Stacy',
     },
