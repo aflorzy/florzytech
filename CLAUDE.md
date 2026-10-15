@@ -41,3 +41,5 @@ All `nx` commands can also be run via `npm run` aliases (`start`, `build`, `test
 **SEO / Analytics** — meta tags and GTM (`GTM-P7LWDR9V`) are static in `apps/web/src/index.html`. Update tags there when copy changes.
 
 **Deploy target** — `./deploy-web.sh` builds production and SCPs the output to `aflorzy@docker.lan:/config/florzytech`.
+
+**CI/CD** — Gitea Actions in `.gitea/workflows/`: `ci.yml` lints and builds on PRs to master; `deploy.yml` lints, builds, and rsyncs `dist/apps/web/` to the server on every push to master (i.e. PR merge). Needs repo secrets `DEPLOY_SSH_KEY`, `DEPLOY_KNOWN_HOSTS` and variables `DEPLOY_HOST`, `DEPLOY_PATH`. `deploy-web.sh` remains as a manual fallback.
